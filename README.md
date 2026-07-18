@@ -144,6 +144,7 @@ _Agregar aquí capturas del CRUD funcionando (listado, formulario, modo
 oscuro, eliminación, etc.)._
 
 ### listado
+
 !{Listado}(imagenes/prueba1.png)
 
 ## Conclusión
