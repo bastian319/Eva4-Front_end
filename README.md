@@ -143,9 +143,35 @@ entregado.
 _Agregar aquí capturas del CRUD funcionando (listado, formulario, modo
 oscuro, eliminación, etc.)._
 
-### listado
+### listado: Como se puede observar en la evidencia se encuentra el listado de los 4 equipos 
 
-![Listado](imagenes/prueba1.png)
+![Listado](imagenes/Listado.png)
+
+### Busqueda: Se hace una busqueda por medio del nombre del equipo
+
+![Busqueda](imagenes/Busqueda.png)
+
+### Busqueda Categoria: Se busco por medio del select categoria y me busco el equipo
+
+![BusquedaCategoria](imagenes/Categoria.png)
+
+### Formulario: Como se observa en el formulario, se deben poner los datos para poder ingresar algun equipo, Pero se arrojaron las validaciones de ingreso el link en el repositorio de las validaciones es [validaciones](src/utils/validations.ts)
+
+![Formulario](imagenes/Formulario.png)
+
+### Eliminacion: Al eliminar el equipo, nos desplazara a un modal de confirmacion, si se aprieta eliminar, se eliminara el registro
+
+![Eliminacion](imagenes/Eliminacion.png)
+
+### Actualizar: Como se observa en el formulario, se pudo editar el nombre del representante y luego se actualizo 
+
+![Actualizar](imagenes/Actualizar1.png)
+![Actualizar](imagenes/Actualizar2.png)
+
+### Modo Oscuro: El fondo posee modo normal y al apretar el modo oscuro, el fondo se oscurece
+
+![Modo_Normal](imagenes/Normal.png)
+![Modo_Oscuro](imagenes/Oscuro.png)
 
 ## Conclusión
 
