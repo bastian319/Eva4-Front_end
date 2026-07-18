@@ -145,7 +145,7 @@ oscuro, eliminación, etc.)._
 
 ### listado
 
-!{Listado}(imagenes/prueba1.png)
+![Listado](imagenes/prueba1.png)
 
 ## Conclusión
 
