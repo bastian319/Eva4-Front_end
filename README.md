@@ -143,6 +143,9 @@ entregado.
 _Agregar aquí capturas del CRUD funcionando (listado, formulario, modo
 oscuro, eliminación, etc.)._
 
+### listado
+!{Listado}(imagenes/prueba1.png)
+
 ## Conclusión
 
 _(Agregar aquí la reflexión técnica del equipo sobre lo aprendido: manejo de
