@@ -84,8 +84,6 @@ export default function Home() {
     }
   };
 
-      
-
   // RF-04: eliminar con confirmación previa
   const confirmDelete = () => {
     if (!deletingResource) return;
