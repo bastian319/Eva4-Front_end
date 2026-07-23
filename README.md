@@ -193,7 +193,9 @@ oscuro, eliminación, etc.)._
 | 📖 Documentación técnica | README.md (raíz del repositorio) |
 | 🐙 Repositorio GitHub | .gitignore (raíz del repositorio), historial de commits del repositorio |
 
-## Pagina en github page
+## Pagina en github page: Se trabajo adicionalmente con github action y con procesos de automatizacion y se creo esta pagina 
+
+https://bastian319.github.io/Eva4-Front_end/
 
 ## Conclusión
 
