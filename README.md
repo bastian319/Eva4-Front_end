@@ -195,7 +195,7 @@ oscuro, eliminación, etc.)._
 
 ## Pagina en github page: Se trabajo adicionalmente con github action y con procesos de automatizacion y se creo esta pagina 
 
-https://bastian319.github.io/Eva4-Front_end/
+{Ver Sitio en Vivo}https://bastian319.github.io/Eva4-Front_end/
 
 ## Conclusión
 
