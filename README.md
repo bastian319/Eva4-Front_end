@@ -193,6 +193,8 @@ oscuro, eliminación, etc.)._
 | 📖 Documentación técnica | README.md (raíz del repositorio) |
 | 🐙 Repositorio GitHub | .gitignore (raíz del repositorio), historial de commits del repositorio |
 
+## Pagina en github page
+
 ## Conclusión
 
 Este proyecto permitió comprender las diferencias prácticas entre Local Storage, Session Storage y Cookies: cada uno cumple un propósito distinto (persistencia general, datos temporales de sesión y preferencias simples, respectivamente). También se aprendió a evitar errores de hidratación en Next.js, sincronizando el estado con el navegador recién dentro de un useEffect, y a organizar la lógica de almacenamiento en hooks personalizados reutilizables. El despliegue en GitHub Pages ayudó a entender la diferencia entre un proyecto con servidor y uno exportado como sitio estático.
