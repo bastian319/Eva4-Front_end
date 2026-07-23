@@ -11,16 +11,14 @@ import { useState, useEffect, useCallback } from "react";
  */
 export function useLocalStorage<T>(key: string, initialValue: T) {
   // useState con inicializador perezoso: solo lee localStorage una vez al montar
-  const [value, setValue] = useState<T>(() => {
-    if (typeof window === "undefined") return initialValue; // seguridad en SSR
-    try {
-      const item = window.localStorage.getItem(key);
-      return item ? (JSON.parse(item) as T) : initialValue;
-    } catch (error) {
-      console.error(`Error leyendo Local Storage (${key}):`, error);
-      return initialValue;
+  const [value, setValue] = useState<T>(initialValue);
+
+  useEffect(() => {
+    const item = window.localStorage.getItem(key);
+    if (item) {
+      setValue(JSON.parse(item));
     }
-  });
+  }, [key]);
 
   // Cada vez que cambia el valor, se persiste en Local Storage
   useEffect(() => {
