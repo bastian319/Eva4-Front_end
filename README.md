@@ -173,8 +173,26 @@ oscuro, eliminación, etc.)._
 ![Modo_Normal](imagenes/Normal.png)
 ![Modo_Oscuro](imagenes/Oscuro.png)
 
+### Error: EL error fue producido porque el estado inicial del hook useLocalStorage no estaba sincronizado con los datos almacenados en el localStorage, lo que provocaba inconsistencias al cargar la app y al renderizar los componentes que dependian de esa informacion
+
+![Error](imagenes/Error.png)
+
+### Solucion: Se implemento un useEffect que se ejecuta al montar el componente y recuperar el valor almacenado mediante window.localStorage.getItem(key). Si existe un dato guardado, este se convierte desde formato JSON utilizando JSON.parse() y se actualiza el estado con setValue(). De esta forma, el estado se inicializa correctamente con la informacion persistida y evitando el error durante la ejecucion
+![Soluccion](imagenes/solucion.png)
+
+### Criterio de evaluacion:
+📋 Criterio de Evaluación
+| Criterio | Ubicación del archivo en el repositorio |
+|----------|-------------------------------------------|
+| ✅ CRUD funcional | src/app/page.tsx (lógica CRUD), src/components/ResourceForm.tsx (crear/editar), src/components/ResourceList.tsx y src/components/ResourceCard.tsx (listar), src/components/ConfirmDeleteModal.tsx (eliminar) |
+| 💾 Local Storage | src/hooks/useLocalStorage.ts, usado en src/app/page.tsx con la clave lab_resources |
+| 🍪 Session Storage y Cookies | src/hooks/useSessionStorage.ts (filtros de búsqueda) y src/hooks/useCookie.ts (tema claro/oscuro), usados en src/app/page.tsx |
+| 🧩 Componentes y Hooks | Componentes en src/components/ (Header, ThemeToggle, ResourceForm, ResourceList, ResourceCard, SearchBar, FilterCategory, ConfirmDeleteModal); Hooks en src/hooks/ (useLocalStorage.ts, useSessionStorage.ts, useCookie.ts) |
+| ✔️ Validaciones y manejo de errores | src/utils/validations.ts, aplicado en src/components/ResourceForm.tsx |
+| 🎨 Interfaz y experiencia de usuario | src/app/globals.css, componentes en src/components/ (diseño con Tailwind CSS) |
+| 📖 Documentación técnica | README.md (raíz del repositorio) |
+| 🐙 Repositorio GitHub | .gitignore (raíz del repositorio), historial de commits del repositorio |
+
 ## Conclusión
 
-_(Agregar aquí la reflexión técnica del equipo sobre lo aprendido: manejo de
-Local Storage/Session Storage/Cookies, hooks personalizados, organización en
-componentes, etc.)_
+Este proyecto permitió comprender las diferencias prácticas entre Local Storage, Session Storage y Cookies: cada uno cumple un propósito distinto (persistencia general, datos temporales de sesión y preferencias simples, respectivamente). También se aprendió a evitar errores de hidratación en Next.js, sincronizando el estado con el navegador recién dentro de un useEffect, y a organizar la lógica de almacenamiento en hooks personalizados reutilizables. El despliegue en GitHub Pages ayudó a entender la diferencia entre un proyecto con servidor y uno exportado como sitio estático.
