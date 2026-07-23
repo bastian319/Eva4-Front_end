@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? "/Laboratorio_Next_React" : "",
-  assetPrefix: isProd ? "/Laboratorio_Next_React" : "",
+  basePath: isProd ? "/Eva4-Front_end" : "",
+  assetPrefix: isProd ? "/Eva4-Front_end" : "",
   trailingSlash: true,
 };
 
